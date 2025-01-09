@@ -584,6 +584,7 @@ const BaseSelect = React.forwardRef<BaseSelectRef, BaseSelectProps>((props, ref)
     }
 
     focusRef.current = true;
+    keyLockRef.current = false;
   };
 
   const onContainerBlur: React.FocusEventHandler<HTMLElement> = (...args) => {
